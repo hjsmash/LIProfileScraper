@@ -20,10 +20,12 @@ public class MyJobs {
         this.role = role;
         this.company = company;
         this.location = location;
-        if (postedOrApplied.startsWith("Applied")) {
-            this.applied = postedOrApplied.substring("Applied".length()).trim();
-        } else if (postedOrApplied.startsWith("Posted")) {
-            this.posted = postedOrApplied.substring("Posted".length()).trim();
+        if (postedOrApplied != null) {
+            if (postedOrApplied.startsWith("Applied")) {
+                this.applied = postedOrApplied.substring("Applied".length()).trim();
+            } else if (postedOrApplied.startsWith("Posted")) {
+                this.posted = postedOrApplied.substring("Posted".length()).trim();
+            }
         }
     }
 
