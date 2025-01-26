@@ -45,6 +45,7 @@ li_at=AQEDASW23xIFbeqmAAABlJ-vdmcAAAGUw7v6Z04ASs4-RGsBZModgaeaN0zfogdzFFRtCoGMGT
 
 ## ⚙️ Prerequisites
 
+- Integrated development environment
 - JDK 17
 - A valid `li_at` cookie obtained from LinkedIn.
 
