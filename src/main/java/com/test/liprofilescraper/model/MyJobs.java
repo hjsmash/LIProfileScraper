@@ -1,4 +1,4 @@
-package com.test.liprofilescraper.api.model;
+package com.test.liprofilescraper.model;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;

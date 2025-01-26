@@ -4,7 +4,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import com.test.liprofilescraper.api.model.MyJobs;
+import com.test.liprofilescraper.model.MyJobs;
 import org.springframework.http.ResponseEntity;
 
 import java.util.ArrayList;

@@ -1,7 +1,7 @@
 package com.test.liprofilescraper.service;
 
-import com.test.liprofilescraper.api.model.JobType;
-import com.test.liprofilescraper.api.model.MyJobs;
+import com.test.liprofilescraper.model.JobType;
+import com.test.liprofilescraper.model.MyJobs;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

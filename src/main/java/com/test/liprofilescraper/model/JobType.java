@@ -1,4 +1,4 @@
-package com.test.liprofilescraper.api.model;
+package com.test.liprofilescraper.model;
 
 public enum JobType {
     SAVED,
