@@ -1,5 +1,6 @@
 package com.test.liprofilescraper.service;
 
+import com.test.liprofilescraper.api.model.JobType;
 import com.test.liprofilescraper.api.model.MyJobs;
 import com.test.liprofilescraper.util.JsonMapperUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class LIScraperService {
     @Autowired
     private RestTemplate restTemplate;
 
-    public List<MyJobs> getLISavedJobsData(String jobType, String cookie) {
+    public List<MyJobs> getLISavedJobsData(JobType jobType, String cookie) {
         try {
             HttpHeaders headers = new HttpHeaders();
             headers.set("Cookie", cookie + JSESSIONID);
@@ -34,7 +35,7 @@ public class LIScraperService {
             HttpEntity<Void> requestEntity = new HttpEntity<>(headers);
 
             ResponseEntity<String> response = restTemplate.exchange(
-                    SAVEDJOBURI.replace("JOB_TYPE", jobType), HttpMethod.GET, requestEntity, String.class);
+                    SAVEDJOBURI.replace("JOB_TYPE", jobType.name()), HttpMethod.GET, requestEntity, String.class);
 
 
             List<MyJobs> myJobsList = new ArrayList<>();
@@ -46,6 +47,4 @@ public class LIScraperService {
             return null;
         }
     }
-
-
 }
