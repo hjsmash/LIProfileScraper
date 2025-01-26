@@ -18,7 +18,7 @@ readable format. Users simply need to input their `li_at` cookie to access their
 ### **Current Available Features**
 
 - **LinkedIn Profile Jobs Scraper**: Fetches and displays your saved jobs in a user-friendly format.
-
+  Choose from the options of SAVED/ IN_PROGRESS / APPLIED / ARCHIVED jobs to fetch data.
 ---
 
 ## 🛠️ Steps to Obtain the `li_at` Cookie
@@ -29,7 +29,6 @@ readable format. Users simply need to input their `li_at` cookie to access their
 4. Select the request and check the **Request Headers** section.
 5. Locate the `Cookie` string and copy the value of `li_at`. It will look like this:
 
--
 li_at=AQEDASW23xIFbeqmAAABlJ-vdmcAAAGUw7v6Z04ASs4-RGsBZModgaeaN0zfogdzFFRtCoGMGThhoiVa_lIQSabVXGnCpum9sbipLhNrzDv74CVWdNX-i3uPQIMco00VdlbwN5q2HCYlWvpbM78K5sLQ;
 
 ---
